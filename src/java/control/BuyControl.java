@@ -91,11 +91,11 @@ public class BuyControl extends HttpServlet {
          }else {
              txt=txt + "," + id + ":"+num;
          }
-                Cookie c=new Cookie("cart", num);
-                c.setMaxAge(2*24*60*60);
-                response.addCookie(c);
-                Cart cart = new Cart(txt, list);
-                int size = cart.getItems()
+//                Cookie c=new Cookie("cart", num);
+//                c.setMaxAge(2*24*60*60);
+//                response.addCookie(c);
+//                Cart cart = new Cart(txt, list);
+//                int size = cart.getItems()
     }
 
     /** 
