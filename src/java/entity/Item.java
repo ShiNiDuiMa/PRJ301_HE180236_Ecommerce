@@ -11,12 +11,12 @@ package entity;
 public class Item {
     private Product product;
     private int quantity;
-    private int price;
+    private double price;
 
     public Item() {
     }
 
-    public Item(Product product, int quantity, int price) {
+    public Item(Product product, int quantity, double price) {
         this.product = product;
         this.quantity = quantity;
         this.price = price;
@@ -38,7 +38,7 @@ public class Item {
         this.quantity = quantity;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 

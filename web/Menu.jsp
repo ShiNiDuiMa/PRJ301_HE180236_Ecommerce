@@ -20,7 +20,7 @@
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent1">      
                 <!-- Navbar brand -->
-                <a class="navbar-brand mt-2 mt-sm-0" href="https://mdbootstrap.com/">
+                <a class="navbar-brand mt-2 mt-sm-0" href="login">
                     <img
                         src="https://media2.giphy.com/media/IEm8kcqLVCctHJ1kWm/giphy.gif"
                         height="40"
@@ -30,18 +30,14 @@
                 </a>
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item" style="font-family: 'Roboto', sans-serif; font-weight: bold;">
+                        <a class="nav-link" href="home">Emufrep</a>
+                    </li>
                     <li class="nav-item active">
                         <a class="nav-link " href="home">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://mdbootstrap.com/docs/standard/">About MDB</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://mdbootstrap.com/docs/standard/getting-started/installation/">Free download</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://mdbootstrap.com/education/bootstrap/">Free tutorials</a>
-                    </li>
+                    
+                    
                 </ul>
                 <!-- Left links -->      
             </div>

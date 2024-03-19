@@ -8,11 +8,14 @@ import com.sun.jdi.connect.spi.Connection;
 import context.DBContext;
 import entity.Account;
 import entity.Brand;
+import entity.Cart;
+import entity.Item;
 import entity.Product;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -285,7 +288,7 @@ public class DAO extends DBContext {
                 int total = rs.getInt(1);
                 int countpage = 0;
                 countpage = total/5;
-                if(total % 5 != 0) {
+                if(total % 8 != 0) {
                     countpage++;
                 }
                 return countpage;
@@ -301,10 +304,10 @@ public class DAO extends DBContext {
         String query = " select * from product\n" +
 " order by id\n" +
 " OFFSET ? ROWS\n" +
-" FETCH FIRST 5 rows only;";
+" FETCH FIRST 8 rows only;";
         try {
             PreparedStatement st = connection.prepareStatement(query);
-            st.setInt(1, (index - 1)*5);
+            st.setInt(1, (index - 1)*8);
             rs = st.executeQuery();
 
             while (rs.next()) {
@@ -321,9 +324,52 @@ public class DAO extends DBContext {
         return list;
     }
 
-    
+    public void addOrder(Account c, Cart cart) {
+        LocalDate curDate = LocalDate.now();
+        String date = curDate.toString();
+        try{
+            String query = "insert into [order] values(?,?,?)";
+        PreparedStatement st = connection.prepareStatement(query);
+        st.setString(1, date);
+        st.setInt(2, c.getuID());
+        st.setDouble(3, cart.getTotalMoney());
+            st.executeUpdate();
+            //get order id
+            String query1="select top 1 id from [order] order by id desc";
+            PreparedStatement st1 = connection.prepareStatement(query1);
+            rs=st1.executeQuery();
+            //add table order detail
+            if(rs.next()) {
+                int oid=rs.getInt("id");
+                for(Item i: cart.getItems()) {
+                    String query2="insert into order_detail "
+                            + "values (?,?,?,?)";
+                    PreparedStatement st2 = connection.prepareStatement(query2);
+                    st2.setInt(1, oid);
+                    st2.setInt(2, i.getProduct().getId());
+                    st2.setInt(3,i.getQuantity());
+                    st2.setDouble(4, i.getPrice());
+                    st2.executeUpdate();
+                    
+                }
+            }
+            //update quantity
+            String query3="update product"
+                    + "set quantity=quantity=? "
+                    + "where id = ?";
+            PreparedStatement st3 = connection.prepareStatement(query3);
+            for(Item i:cart.getItems()) {
+                st3.setInt(1, i.getQuantity());
+                st3.setInt(2, i.getProduct().getId());
+                st3.executeUpdate();
+            }
+        } catch (Exception e) {
+
+        }
+    }
     public static void main(String[] args) {
         DAO dao = new DAO();
+        
 //        dao.InsertProduct("a", "https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw69c481c1/Y0996414/Y0996414_C099641476_E03_ZHC.jpg?sw=3000&sh=2000", "330", "a", "a", "a", 1);
 //        List<Product> list = dao.getProductBySellID(1);
 //        for (Product o : list) {

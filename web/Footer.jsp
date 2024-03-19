@@ -9,10 +9,10 @@
 
             <!--Call to action-->
             <div class="pt-4 pb-2">
-                <a class="btn btn-outline-white footer-cta mx-2" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">Download MDB
+                <a class="btn btn-outline-white footer-cta mx-2" href="login" target="_blank" role="button">Be our guest
                     <i class="fas fa-download ms-2"></i>
                 </a>
-                <a class="btn btn-outline-white footer-cta mx-2" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start free tutorial
+                <a class="btn btn-outline-white footer-cta mx-2" href="home" target="_blank" role="button">Start shopping
                     <i class="fas fa-graduation-cap ms-2"></i>
                 </a>
             </div>
@@ -84,7 +84,7 @@
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); text-color: #E0E0E0">
                 © 2022 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                <a class="text-white" href="home">Emufrep</a>
             </div>
             <!-- Copyright -->
         </footer>

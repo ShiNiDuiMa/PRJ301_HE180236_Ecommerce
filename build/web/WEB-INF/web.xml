@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <filter>
+        <filter-name>NewFilter</filter-name>
+        <filter-class>Filter.NewFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>NewFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>ManagerControl</servlet-name>
         <servlet-class>control.ManagerControl</servlet-class>
@@ -32,6 +40,18 @@
         <servlet-name>BuyControl</servlet-name>
         <servlet-class>control.BuyControl</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ShowCartControl</servlet-name>
+        <servlet-class>control.ShowCartControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcessControl</servlet-name>
+        <servlet-class>control.ProcessControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckoutControl</servlet-name>
+        <servlet-class>control.CheckoutControl</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ManagerControl</servlet-name>
         <url-pattern>/manager</url-pattern>
@@ -63,5 +83,17 @@
     <servlet-mapping>
         <servlet-name>BuyControl</servlet-name>
         <url-pattern>/buy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowCartControl</servlet-name>
+        <url-pattern>/show</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcessControl</servlet-name>
+        <url-pattern>/process</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckoutControl</servlet-name>
+        <url-pattern>/checkout</url-pattern>
     </servlet-mapping>
 </web-app>

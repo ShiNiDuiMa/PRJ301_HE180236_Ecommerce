@@ -60,11 +60,13 @@
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia ipsa sint voluptatibus! Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
 
-                    <form class="d-flex justify-content-left">
+                    <form class="d-flex justify-content-left" action="buy" method="post">
+                        <input type="hidden" name="id" value="${detail.id}">
                         <!-- Default input -->
                         <div class="form-outline me-1" style="width: 100px;">
-                            <input type="number" value="1" class="form-control" />
+                            <input name="num" type="number" value="1" class="form-control" />
                         </div>
+                        
                         <button class="btn btn-primary ms-1" type="submit">
                             Add to cart
                             <i class="fas fa-shopping-cart ms-1"></i>
