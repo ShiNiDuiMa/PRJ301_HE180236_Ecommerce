@@ -191,13 +191,14 @@
                 <!-- Pagination -->
                 <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-3">
                     <ul class="pagination">
+                         <c:forEach var="o" begin="1" end="${a}">
                         <li class="page-item active">
 <!--                            <a class="page-link" href="#" aria-label="Previous">
                                 <span aria-hidden="true">&laquo;</span>
                             </a>-->
-                            <c:forEach var="o" begin="1" end="6">
+                           
                             <li class="page-item" ${indexPage==o?"active":""}><a class="page-link" href="home?index=${o}">${o}</a></li>
-                            </c:forEach>
+                           
 
 
                         <li class="page-item">
@@ -205,6 +206,7 @@
                                 <span aria-hidden="true">&raquo;</span>
                             </a>-->
                         </li>
+                         </c:forEach>
                     </ul>
                 </nav>   
                 <!-- Pagination -->  

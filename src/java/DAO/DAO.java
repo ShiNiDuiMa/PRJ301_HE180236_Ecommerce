@@ -287,7 +287,7 @@ public class DAO extends DBContext {
             while (rs.next()) {
                 int total = rs.getInt(1);
                 int countpage = 0;
-                countpage = total/5;
+                countpage = total/8;
                 if(total % 8 != 0) {
                     countpage++;
                 }

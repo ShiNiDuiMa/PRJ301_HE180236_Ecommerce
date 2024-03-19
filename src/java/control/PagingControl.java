@@ -34,13 +34,19 @@ public class PagingControl extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
          String index = request.getParameter("index");
          DAO dao = new DAO();
+         List<Product> listP = dao.getAllProduct();
          if(index==null) {
              index = "1";
          }
          
          int indexPage = Integer.parseInt(index);
+         
+         int size= listP.size();
+        int a=(size%8==0?(size/8):((size/8))+1);
+        
          List<Product> list = dao.getPaging(indexPage);
          request.setAttribute("listP", list);
+          request.setAttribute("a", a);
          request.getRequestDispatcher("Home.jsp").forward(request, response);
     } 
 
