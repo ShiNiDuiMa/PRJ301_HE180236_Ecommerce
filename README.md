@@ -1,4 +1,4 @@
-![image](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/assets/134154486/93d2728a-1283-4536-8e70-f73de7260cf8)![image](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/assets/134154486/845e2d43-1ae6-40b5-8530-39080f00060e)# Perfume Online Shop
+![image](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/assets/134154486/845e2d43-1ae6-40b5-8530-39080f00060e)# Perfume Online Shop
 
 Welcome to the Perfume Online Shop! This repository contains the source code for a simple perfume online shop web application.
 
@@ -33,27 +33,34 @@ Copy code
 
 ## Usage
 - This is my home page
-- ![Alt Text]([image_url](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(435).png?raw=true))
+- ![Alt Text](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(435).png?raw=true)
 - Browse through the collection of perfumes listed on the website.
 - Use the search functionality to find specific perfumes.
 - Click Brand name on menu to move to the page contains products of that brand only.
-- ![Alt Text]([image_url](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(436).png?raw=true))
+- ![Alt Text](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(436).png?raw=true)
+
 - Click other page number to explore more product
-- ![Alt Text]([image_url](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(437).png?raw=true))
+- ![Alt Text](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(437).png?raw=true)
+
 - Click on a perfume to view detailed information.
-- ![Alt Text]([image_url](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(442).png?raw=true))
+- ![Alt Text](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(442).png?raw=true)
+
 - Click 'Log in' to log in to your account.
-- ![Alt Text]([image_url](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(438).png?raw=true))
+- ![Alt Text](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(438).png?raw=true)
+
 - If you do not have an account yet, click 'Sign up' in order to create one.
-- ![Alt Text]([image_url](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(439).png?raw=true))
+- ![Alt Text](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(439).png?raw=true)
+
 - Add perfumes to your shopping cart by clicking the "Add to Cart" button.
-- ![Alt Text](image_url)
+- ![Alt Text](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(443).png?raw=true)
 - Click cart symbol on left corner of the screen to proceed to checkout to complete your purchase.
-- ![Alt Text](image_url)
+
 - If you log in as an Admin, you can access Manage Product page and Manage Orders page by click a link on the left corner of the screen
 - Here is the interface of those pages
-- ![Alt Text]([image_url](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(440).png?raw=true))
-- ![Alt Text]([image_url](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(441).png?raw=true))
+- ![Alt Text](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(440).png?raw=true)
+
+- ![Alt Text](https://github.com/ShiNiDuiMa/PRJ301_HE180236_Ecommerce/blob/master/PRJ301/Screenshot%20(441).png?raw=true)
+
 
 ## Contributing
 
