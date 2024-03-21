@@ -10,6 +10,7 @@ import entity.Account;
 import entity.Brand;
 import entity.Cart;
 import entity.Item;
+import entity.Order;
 import entity.Product;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -367,6 +368,26 @@ public class DAO extends DBContext {
 
         }
     }
+    
+    public List<Order> getAllOrder() {
+         List<Order> list = new ArrayList<>();
+        String query = "select*from [order]";
+        try {
+            PreparedStatement st = connection.prepareStatement(query);
+            rs = st.executeQuery();
+
+            while (rs.next()) {
+                list.add(new Order(rs.getInt(1),
+                        rs.getString(2),
+                        rs.getInt(3),
+                        rs.getInt(4)));
+            }
+        } catch (Exception e) {
+
+        }
+        return list;
+    }
+    
     public static void main(String[] args) {
         DAO dao = new DAO();
         

@@ -3,17 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/src/java/entity/Item.java</file>
+            <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/web/ManagerProduct.jsp</file>
             <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/src/java/DAO/DAO.java</file>
-            <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/src/java/entity/Cart.java</file>
             <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/web/Home.jsp</file>
             <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/web/myCart.jsp</file>
-            <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/web/Menu.jsp</file>
+            <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/src/java/entity/Cart.java</file>
+            <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/src/java/control/PagingControl.java</file>
             <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/src/java/control/HomeControl.java</file>
             <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/src/java/control/BuyControl.java</file>
+            <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/src/java/control/ProcessControl.java</file>
+            <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/web/Footer.jsp</file>
             <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/src/java/control/ShowCartControl.java</file>
-            <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/web/css/Cart.css</file>
-            <file>file:/C:/Users/bantr/OneDrive/Documents/NetBeansProjects/ecommerce/web/Login.jsp</file>
         </group>
     </open-files>
 </project-private>

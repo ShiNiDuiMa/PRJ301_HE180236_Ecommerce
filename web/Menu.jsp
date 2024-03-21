@@ -60,6 +60,10 @@
                     <a class="nav-link me-3" href="manager">
                         <i class=""></i>Manager Product
                     </a>
+                     <a class="nav-link me-3" href="manageorder">
+                        <i class=""></i>Manager Order
+                    </a>
+                    
                 </c:if>
 
 
